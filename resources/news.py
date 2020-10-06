@@ -14,6 +14,9 @@ pagination = Pagination()
 Teheran_news.init()
 Somos_kudasai.init()
 
+class Base(Resource):
+    def get(self):
+        return "Hello"
 
 class News(Resource):
     def get(self, news_id: str):
